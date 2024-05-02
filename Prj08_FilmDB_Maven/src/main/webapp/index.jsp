@@ -1,3 +1,6 @@
+    import DB.FilmDao;
+    import model.Film;
+
     <head>
         <title>Title</title>
         <!-- Required meta tags -->
@@ -20,6 +23,19 @@
         </header>
         <main>
             <h1>Film DB</h1>
+            <table>
+                <tr>
+                <th>Titolo</th>
+                 <th>regista</th>
+                </tr>
+                <% FilmDao dao = new FilmDao();%>
+                <% for (Film f : dao.getFilms(){) %>
+                <tr>
+                     <td><%=f.getTitolo()%></td>
+                     <td><%=f.getRegista()%></td>
+                 </tr>
+                 <%}%>
+            </table>
         </main>
         <footer>
             <!-- place footer here -->
