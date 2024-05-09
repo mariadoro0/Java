@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17"/>
-	<classpathentry kind="src" path="src/main/java"/>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/apache-tomcat-10.1.15">
-		<attributes>
-			<attribute name="owner.project.facets" value="jst.web"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="output" path="build/classes"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Esercitazioni/Esercitazione/src"/>
+	<classpathentry kind="src" path="Prj00_HelloWorld/src"/>
+	<classpathentry kind="src" path="Prj00_Laboratorio/src"/>
+	<classpathentry kind="src" path="Prj01_LanciaDadi/src"/>
+	<classpathentry kind="src" path="Prj02_asilocani/src"/>
+	<classpathentry kind="src" path="Prj03_segreteria/src"/>
+	<classpathentry kind="src" path="Prj04_studenti/src"/>
+	<classpathentry kind="src" path="Prj05_geometria/src"/>
+	<classpathentry kind="src" path="Prj06_Dipendenti/src"/>
+	<classpathentry kind="src" path="Prj07_Biblioteca_MariaDoro/src"/>
+	<classpathentry kind="src" path="Prj08_FilmDB_casino/Prj08_FilmDB_Eclipse/src/main/java"/>
+	<classpathentry kind="src" path="Prj08_FilmDB_Maven/src/main/java"/>
+	<classpathentry kind="src" path="PrjDB_noleggiofilm/src"/>
+	<classpathentry kind="lib" path="Prj08_FilmDB_Maven/lib/mariadb-java-client-3.3.3.jar"/>
+	<classpathentry kind="lib" path="PrjDB_noleggiofilm/lib/mariadb-java-client-3.3.3.jar"/>
+	<classpathentry kind="output" path="Prj00_HelloWorld/bin"/>
 </classpath>
