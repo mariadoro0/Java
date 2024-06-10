@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+</head>
+<body>
+    <h1>Pokemon!</h1>
+    
+    <script>
+        const URL= '/pokemon-pics'
+        fetch(URL)
+            .then(risposta => risposta.json())  /*comunica che la risposta sarà un json*/ 
+            .then(listaPokemon => {
+                for (pokemon of listaPokemon){
+                    const IMMAGINE = document.createElement('img')
+                    IMMAGINE.src = pokemon.img
+                    document.body.append(IMMAGINE)
+                }
+            })
+
+    </script>
+</body>
+</html>
