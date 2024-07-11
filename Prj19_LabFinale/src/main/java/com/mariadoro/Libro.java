@@ -5,6 +5,7 @@ public class Libro implements Comparable<Libro>{
     public int pagine;
 
     public Libro(String s) {
+        this.titolo = s;
     }
 
     @Override
