@@ -1,0 +1,30 @@
+import java.util.*;
+public static void main(){
+    Random r = new Random();
+    int r1= r.nextInt(5);
+    int r2 = r.nextInt(5)
+    int r3 = r.nextInt(5);
+
+    boolean flag = true;
+    do{
+        if(r1==r2){
+            r2=r.nextInt(5);
+            flag=false;
+        }else{
+            flag=false;
+        }
+        if(r2==r3 || r3==r1){
+            r3=r.nextInt(5);
+            flag=false;
+        } else {
+            flag=false;
+        }
+
+
+    }while(flag);
+
+    System.out.println(r1);
+    System.out.println(r2);
+    System.out.println(r3);
+
+}
