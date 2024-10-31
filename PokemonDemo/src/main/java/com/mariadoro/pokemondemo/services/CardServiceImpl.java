@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class CardServiceImpl implements CardService {
     @Autowired
@@ -17,13 +19,13 @@ public class CardServiceImpl implements CardService {
     }
 
     @Override
-    public Card getCard(String id) {
-        return dao.findCardsByPokemonId(id);
+    public Optional<Card> getCard(String id) {
+        return dao.findById(id);
     }
 
     @Override
     public List<Card> getCardsByName(String name) {
-        return dao.findCardsByPokemonName(name);
+        return dao.findCardsByName(name);
     }
 
     @Override

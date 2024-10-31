@@ -1,13 +1,21 @@
 package com.mariadoro.pokemondemo.entities;
 
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonGetter;
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 import java.util.List;
+@Getter
+@Setter
 @Entity
+@Table(name = "pokemon")
 public class Card {
     @Id
     private String id;
